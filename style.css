@@ -5,9 +5,8 @@
 /* "Allison Schulman" */
 h1 {
   font-family: cursive;
-  font-size: 72px;
+  font-size: 68px;
   text-align: center;
-  height: 50px;
 }
 
 /* "Web Developer" */
@@ -15,6 +14,11 @@ h2 {
   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
   font-size: 30px;
   text-align: center;
+}
+
+img {
+  width: 80%;
+  margin: 0 auto;
 }
 
 /* "Intro, About Me, Contact" */
@@ -49,7 +53,7 @@ body {
   background-color: antiquewhite;
 }
 
-/* pseudoclasses */
+/* pseudoclasses for links */
 a:link {color: blue}
 a:visited {color: gray}
 a:hover {color: purple}
@@ -61,18 +65,46 @@ header {
 
 footer {
   text-align: center;
-  padding-bottom: 30px;
+  margin: 40px;
 }
 
 .container {
   margin: 0 auto;
-  width: 80%;
   text-align: center;
 }
 
 main {
-  width: 900px;
+  width: 80%;
   margin: auto;
+}
+
+/* Form */
+
+form {
+  margin: 10px;
+}
+
+form label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color:black;
+  font-family: arial;
+}
+
+form input[type=text] {
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 100%;
+}
+
+form textarea {
+  height: 4rem;
+  width: 100%;
+  color: #000;
+  font-size: 14px;
+  margin-bottom: 10px;
 }
 
 /* Groups & Items (Mobile first) */
@@ -92,6 +124,10 @@ item2 {
   margin: 10px;
 }
 
+.text-left {
+  text-align: left;
+}
+
 /* Group & Items (Desktop) */
 
 @media all and (min-width: 800px) {
@@ -104,3 +140,12 @@ item2 {
     flex-direction: row;
   }
 }
+
+/* To Do 
+
+Revision requirements
+"Projects" section - fix images & alignment
+Margin vs padding - in general and specifically for form & footer
+Overall extra margin/padding on right somewhere?
+
+*/
