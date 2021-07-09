@@ -1,1 +1,1 @@
-My portfolio updated with a mobile-first responsive design.
+My portfolio updated with mobile-first responsive design.
